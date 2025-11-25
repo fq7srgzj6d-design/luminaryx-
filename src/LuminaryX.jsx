@@ -14,7 +14,7 @@ import {
   MessageCircle
 } from 'lucide-react';
 
-// Imágenes locales (deben estar en src/assets)
+// Imágenes locales (asegúrate que existan en src/assets con estos nombres)
 import dentist from './assets/dentistapng.jpeg';
 import logoCorporativo from './assets/logoEmpresa.png.jpeg';
 import mascotaGeo from './assets/mascota.jpeg.webp';
@@ -52,7 +52,7 @@ const LuminaryX = () => {
 
   const categories = ['Todos', 'Parejas & Familia', 'Anime & Gamer', 'Mascotas', 'Logos & Negocios'];
 
-  // DATOS DE PRODUCTOS con tus imágenes
+  // DATOS DE PRODUCTOS (usando tus imágenes)
   const products = [
     {
       id: 1,
@@ -74,7 +74,7 @@ const LuminaryX = () => {
     },
     {
       id: 3,
-      title: "Mascota",
+      title: "Mascota Geométrica",
       category: "Mascotas",
       price: "$590 MXN",
       image: mascotaGeo,
@@ -92,7 +92,7 @@ const LuminaryX = () => {
     },
     {
       id: 5,
-      title: "Escudo / Trofeo Equipo",
+      title: "Trofeo / Escudo Equipo",
       category: "Anime & Gamer",
       price: "$590 MXN",
       image: trofeoEquipo,
@@ -101,7 +101,7 @@ const LuminaryX = () => {
     },
     {
       id: 6,
-      title: "Profesiones (Médico / Dentista)",
+      title: "Profesiones (Dentista / Médico)",
       category: "Logos & Negocios",
       price: "$590 MXN",
       image: dentist,
@@ -116,7 +116,7 @@ const LuminaryX = () => {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-50 font-sans selection:bg-purple-500/50 selection:text-white">
-      
+
       {/* --- NAVEGACIÓN --- */}
       <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-slate-950/95 backdrop-blur-md shadow-lg border-b border-white/5 py-2' : 'bg-transparent py-4'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -127,11 +127,9 @@ const LuminaryX = () => {
                   <div className="absolute w-4 h-4 bg-slate-950 rounded-full top-2 left-2 group-hover:bg-purple-600 transition-colors"></div>
                 </div>
               </div>
-              <span className="font-serif text-2xl tracking-widest font-bold text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">
-                LUMINARYX
-              </span>
+              <span className="font-serif text-2xl tracking-widest font-bold text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]">LUMINARYX</span>
             </div>
-            
+
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-8">
                 {navLinks.map((link) => (
@@ -148,15 +146,15 @@ const LuminaryX = () => {
             </div>
 
             <div className="hidden md:block">
-               <a 
+              <a 
                 href={generateWhatsAppLink("Consulta General")}
                 target="_blank"
                 rel="noreferrer"
                 className="bg-transparent border-2 border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white hover:shadow-[0_0_20px_rgba(168,85,247,0.5)] px-6 py-2 rounded-full font-bold transition-all duration-300 text-sm relative overflow-hidden group"
-               >
-                 <span className="relative z-10">Cotizar Ahora</span>
-                 <div className="absolute inset-0 bg-purple-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-xl"></div>
-               </a>
+              >
+                <span className="relative z-10">Cotizar Ahora</span>
+                <div className="absolute inset-0 bg-purple-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-xl"></div>
+              </a>
             </div>
 
             <div className="-mr-2 flex md:hidden">
@@ -211,7 +209,7 @@ const LuminaryX = () => {
       <section id="home" className="relative pt-32 pb-16 md:pt-48 md:pb-32 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
           <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-purple-600/30 rounded-full blur-3xl animate-pulse-slow"></div>
-          <div className="absolute bottom-[10%] left-[-10%] w-[500px] h-[500px] bg-cyan-600/30 rounded-full blur-3xl animate-pulse-slow" style={{animationDelay: '1.5s'}}></div>
+          <div className="absolute bottom-[10%] left-[-10%] w-[500px] h-[500px] bg-cyan-600/30 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1.5s' }}></div>
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(168,85,247,0.05),transparent_70%)]"></div>
         </div>
 
@@ -219,14 +217,14 @@ const LuminaryX = () => {
           <h2 className="text-purple-300 font-light tracking-[0.4em] uppercase text-xs mb-8 opacity-90">
             Diseño en Acrílico & LED
           </h2>
-          
+
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-thin text-white mb-8 leading-tight tracking-wide">
             Lámparas LED <br />
             <span className="font-normal bg-gradient-to-r from-purple-200 via-white to-cyan-200 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(168,85,247,0.3)]">
               Personalizadas
             </span>
           </h1>
-          
+
           <p className="mt-8 max-w-xl mx-auto text-lg text-slate-300 font-light tracking-wider border-t border-white/10 pt-8">
             Hechas para iluminar tus mejores recuerdos.
           </p>
@@ -285,13 +283,9 @@ const LuminaryX = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-blue-600/5 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="text-center mb-12 relative z-10">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4 drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]">
-            Nuestro Catálogo
-          </h2>
-          <p className="text-slate-400 drop-shadow-[0_0_5px_rgba(255,255,255,0.1)]">
-            Explora nuestras colecciones. Precio promedio: $590 MXN.
-          </p>
-          
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4 drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]">Nuestro Catálogo</h2>
+          <p className="text-slate-400 drop-shadow-[0_0_5px_rgba(255,255,255,0.1)]">Explora nuestras colecciones. Precio promedio: $590 MXN.</p>
+
           <div className="flex flex-wrap justify-center gap-3 mt-8">
             {categories.map((cat) => (
               <button
@@ -341,16 +335,10 @@ const LuminaryX = () => {
                 </span>
               </div>
               <div className="p-6 relative z-20 bg-slate-900/80 backdrop-blur-sm">
-                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-white transition-colors drop-shadow-[0_0_5px_rgba(255,255,255,0.2)]">
-                  {product.title}
-                </h3>
-                <p className="text-slate-400 text-sm mb-4 line-clamp-2 group-hover:text-slate-300 transition-colors">
-                  {product.description}
-                </p>
+                <h3 className="text-xl font-bold text-white mb-2 group-hover:text-white transition-colors drop-shadow-[0_0_5px_rgba(255,255,255,0.2)]">{product.title}</h3>
+                <p className="text-slate-400 text-sm mb-4 line-clamp-2 group-hover:text-slate-300 transition-colors">{product.description}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-2xl font-light text-white drop-shadow-[0_0_5px_rgba(255,255,255,0.3)]">
-                    {product.price}
-                  </span>
+                  <span className="text-2xl font-light text-white drop-shadow-[0_0_5px_rgba(255,255,255,0.3)]">{product.price}</span>
                   <a 
                     href={generateWhatsAppLink(product.title)}
                     target="_blank"
@@ -375,16 +363,12 @@ const LuminaryX = () => {
 
       {/* --- PROCESO --- */}
       <section id="proceso" className="py-20 bg-slate-900 border-y border-white/5 relative overflow-hidden">
-         <div className="absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-500/30 to-transparent -translate-y-1/2 blur-md pointer-events-none hidden md:block"></div>
+        <div className="absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-500/30 to-transparent -translate-y-1/2 blur-md pointer-events-none hidden md:block"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4 drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]">
-              ¿Cómo trabajamos?
-            </h2>
-            <p className="text-slate-400 drop-shadow-[0_0_5px_rgba(255,255,255,0.1)]">
-              Convertimos tu idea en luz en 4 sencillos pasos.
-            </p>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-4 drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]">¿Cómo trabajamos?</h2>
+            <p className="text-slate-400 drop-shadow-[0_0_5px_rgba(255,255,255,0.1)]">Convertimos tu idea en luz en 4 sencillos pasos.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -402,12 +386,8 @@ const LuminaryX = () => {
                   <div className="text-purple-400 mb-4 opacity-50 group-hover:opacity-100 transition-opacity duration-300 group-hover:drop-shadow-[0_0_5px_rgba(168,85,247,0.8)]">
                     {item.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-400 text-sm group-hover:text-slate-300 transition-colors">
-                    {item.desc}
-                  </p>
+                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">{item.title}</h3>
+                  <p className="text-slate-400 text-sm group-hover:text-slate-300 transition-colors">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -420,9 +400,7 @@ const LuminaryX = () => {
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 font-medium transition-all border-b border-purple-400/50 hover:border-purple-300 pb-1 hover:shadow-[0_5px_10px_-5px_rgba(168,85,247,0.5)] group"
             >
-              <span className="group-hover:drop-shadow-[0_0_5px_rgba(168,85,247,0.8)]">
-                Tengo una duda sobre mi foto
-              </span>
+              <span className="group-hover:drop-shadow-[0_0_5px_rgba(168,85,247,0.8)]">Tengo una duda sobre mi foto</span>
               <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
             </a>
           </div>
@@ -435,38 +413,20 @@ const LuminaryX = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-            
             <div className="col-span-1 lg:col-span-2">
-              <h2 className="text-2xl font-serif font-bold text-white mb-4 tracking-wider drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]">
-                LUMINARYX
-              </h2>
+              <h2 className="text-2xl font-serif font-bold text-white mb-4 tracking-wider drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]">LUMINARYX</h2>
               <p className="text-slate-400 mb-6 max-w-sm drop-shadow-[0_0_2px_rgba(255,255,255,0.1)]">
                 Un estudio de diseño dedicado a transformar recuerdos en objetos de luz.
                 Con base en Puerto Vallarta, iluminando emociones.
               </p>
               <div className="flex gap-4">
-                <a 
-                  href="https://www.facebook.com/LuminaryXLED/" 
-                  target="_blank" 
-                  rel="noreferrer" 
-                  className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-blue-400 hover:border-blue-400 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] transition-all"
-                >
+                <a href="https://www.facebook.com/LuminaryXLED/" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-blue-400 hover:border-blue-400 hover:shadow-[0_0_15px_rgba(59,130,246,0.5)] transition-all">
                   <Facebook size={20} />
                 </a>
-                <a 
-                  href="https://www.instagram.com/luminar.yx" 
-                  target="_blank" 
-                  rel="noreferrer" 
-                  className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-pink-400 hover:border-pink-400 hover:shadow-[0_0_15px_rgba(236,72,153,0.5)] transition-all"
-                >
+                <a href="https://www.instagram.com/luminar.yx" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-pink-400 hover:border-pink-400 hover:shadow-[0_0_15px_rgba(236,72,153,0.5)] transition-all">
                   <Instagram size={20} />
                 </a>
-                <a 
-                  href="https://www.tiktok.com/@luminaryx7?_r=1&_t=ZS-91gB5IUDN33" 
-                  target="_blank" 
-                  rel="noreferrer" 
-                  className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(34,211,238,0.5)] transition-all"
-                >
+                <a href="https://www.tiktok.com/@luminaryx7?_r=1&_t=ZS-91gB5IUDN33" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(34,211,238,0.5)] transition-all">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="20" 
@@ -485,51 +445,29 @@ const LuminaryX = () => {
             </div>
 
             <div>
-              <h3 className="text-white font-bold mb-4 uppercase text-sm tracking-wider drop-shadow-[0_0_5px_rgba(255,255,255,0.3)]">
-                Contacto
-              </h3>
+              <h3 className="text-white font-bold mb-4 uppercase text-sm tracking-wider drop-shadow-[0_0_5px_rgba(255,255,255,0.3)]">Contacto</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3 text-slate-400 group">
                   <Mail size={18} className="mt-1 text-purple-500 group-hover:text-purple-400 group-hover:drop-shadow-[0_0_5px_rgba(168,85,247,0.8)] transition-all" />
-                  <span className="group-hover:text-slate-300 transition-colors">
-                    Luminaryx.pvr@gmail.com
-                  </span>
+                  <span className="group-hover:text-slate-300 transition-colors">Luminaryx.pvr@gmail.com</span>
                 </li>
                 <li className="flex items-start gap-3 text-slate-400 group">
                   <Phone size={18} className="mt-1 text-purple-500 group-hover:text-purple-400 group-hover:drop-shadow-[0_0_5px_rgba(168,85,247,0.8)] transition-all" />
-                  <span className="group-hover:text-slate-300 transition-colors">
-                    +52 4112 6327
-                  </span>
+                  <span className="group-hover:text-slate-300 transition-colors">+52 4112 6327</span>
                 </li>
                 <li className="flex items-start gap-3 text-slate-400 group">
                   <Briefcase size={18} className="mt-1 text-purple-500 group-hover:text-purple-400 group-hover:drop-shadow-[0_0_5px_rgba(168,85,247,0.8)] transition-all" />
-                  <span className="group-hover:text-slate-300 transition-colors">
-                    Puerto Vallarta, Jalisco
-                  </span>
+                  <span className="group-hover:text-slate-300 transition-colors">Puerto Vallarta, Jalisco</span>
                 </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-white font-bold mb-4 uppercase text-sm tracking-wider drop-shadow-[0_0_5px_rgba(255,255,255,0.3)]">
-                Enlaces
-              </h3>
+              <h3 className="text-white font-bold mb-4 uppercase text-sm tracking-wider drop-shadow-[0_0_5px_rgba(255,255,255,0.3)]">Enlaces</h3>
               <ul className="space-y-2">
-                <li>
-                  <a href="#home" className="text-slate-400 hover:text-white hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.8)] transition-all">
-                    Inicio
-                  </a>
-                </li>
-                <li>
-                  <a href="#catalogo" className="text-slate-400 hover:text-white hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.8)] transition-all">
-                    Catálogo
-                  </a>
-                </li>
-                <li>
-                  <a href="#proceso" className="text-slate-400 hover:text-white hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.8)] transition-all">
-                    Proceso de Compra
-                  </a>
-                </li>
+                <li><a href="#home" className="text-slate-400 hover:text-white hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.8)] transition-all">Inicio</a></li>
+                <li><a href="#catalogo" className="text-slate-400 hover:text-white hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.8)] transition-all">Catálogo</a></li>
+                <li><a href="#proceso" className="text-slate-400 hover:text-white hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.8)] transition-all">Proceso de Compra</a></li>
               </ul>
             </div>
           </div>
