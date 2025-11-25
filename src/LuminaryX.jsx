@@ -37,7 +37,7 @@ const LuminaryX = () => {
   }, []);
 
   // WhatsApp
-  const phoneNumber = '5241126327';
+  const phoneNumber = '+525541126327';
   const generateWhatsAppLink = (productName) => {
     const message = `Hola LuminaryX, estoy interesado en una lámpara personalizada estilo: ${productName}. ¿Podrían darme más información?`;
     return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
@@ -600,7 +600,7 @@ const LuminaryX = () => {
                     className="mt-1 text-purple-500 group-hover:text-purple-400 group-hover:drop-shadow-[0_0_5px_rgba(168,85,247,0.8)] transition-all"
                   />
                   <span className="group-hover:text-slate-300 transition-colors">
-                    +52 4112 6327
+                    +52 55 4112 6327
                   </span>
                 </li>
                 <li className="flex items-start gap-3 text-slate-400 group">
