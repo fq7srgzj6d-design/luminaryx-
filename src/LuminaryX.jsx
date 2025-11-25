@@ -1,19 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import {
-  Lightbulb,
-  Briefcase,
-  Menu,
-  X,
-  Instagram,
-  Facebook,
-  Mail,
-  Phone,
+import { 
+  Lightbulb, 
+  Briefcase, 
+  Menu, 
+  X, 
+  Instagram, 
+  Facebook, 
+  Mail, 
+  Phone, 
   ChevronRight,
   Sparkles,
   Gift,
   MessageCircle
 } from 'lucide-react';
 
+// Imágenes locales
+import parejaLineArt from "./assets/pareja1.jpg.jpeg";
+import anime3D from "./assets/personajeGoku.png.jpeg";
+import mascotaGeo from "./assets/mascota.jpeg.webp";
+import logoCorporativo from "./assets/logoEmpresa.png.jpeg";
+import trofeoEquipo from "./assets/trofeo.png.png";
+import medicoDentista from "./assets/dentista.png.jpeg";
 const LuminaryX = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState('Todos');
