@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes pulse-slow {0%,100%{opacity:.3;transform:scale(1);}50%{opacity:.5;transform:scale(1.1);}}
+.animate-pulse-slow{animation:pulse-slow 8s ease-in-out infinite;}
+
+@keyframes gradient-x {0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+.animate-gradient-x{background-size:200% 200%;animation:gradient-x 5s ease infinite;}
