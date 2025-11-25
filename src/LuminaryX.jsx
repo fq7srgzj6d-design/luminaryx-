@@ -15,12 +15,13 @@ import {
 } from 'lucide-react';
 
 // Imágenes locales (guárdalas en src/assets con estos nombres o ajusta las rutas)
-import parejaLineArt from './assets/pareja1.jpg';
-import anime3D from './assets/personajeGoku.png';
-import mascotaGeo from './assets/mascota.jpeg';
-import logoCorporativo from './assets/logoEmpresa.png';
-import trofeoEquipo from './assets/trofeo.png';
-import medicoDentista from './assets/dentista.png';
+import parejaLineArt from './assets/pareja1.jpg.jpeg';
+import dentist from './assets/dentistapng.jpeg';
+import logoCorporativo from './assets/logoEmpresa.png.jpeg';
+import mascotaGeo from './assets/mascota.jpeg.webp';
+import parejaLineArt from './assets/pareja1.jpg.jpeg';
+import personajeGoku from './assets/personajeGoku.png.jpeg';
+import trofeoEquipo from './assets/trofeo.png.png';
 
 const LuminaryX = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
