@@ -15,7 +15,6 @@ import {
 } from 'lucide-react';
 
 // Imágenes locales (guárdalas en src/assets con estos nombres o ajusta las rutas)
-import parejaLineArt from './assets/pareja1.jpg.jpeg';
 import dentist from './assets/dentistapng.jpeg';
 import logoCorporativo from './assets/logoEmpresa.png.jpeg';
 import mascotaGeo from './assets/mascota.jpeg.webp';
